@@ -2,21 +2,21 @@
 layout: default
 ---
 
-
 <div class="row">
   {% for post in site.posts %}
     <div class="col-sm-12 col-md-6 col-lg-4">
-      <div class="panel panel-warning">
-        <div class="panel-heading">
-          <h3>{{post.title}}</h3>
+      <div class="post-wrapper">
+        <div class="post-heading">
+          <a href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
         </div>
-        <div class="panel-body">
-           {{ post.short_description }}
+
+        <div class="post-short-description">
+          {{ post.description }}
         </div>
-        <div class="panel-footer">
-          <p class="text-info pull-right">
-            Posted On: {{ post.date | date: "%b %-d, %Y"}}
-          </p>
+
+        <div class="post-footer">
+          <span class="pull-left">author: {{post.author}}</span>
+          <span class="pull-right">{{post.date | date: "%b %-d, %Y"}}</span>
           <div class="clearfix"></div>
         </div>
       </div>
@@ -24,15 +24,4 @@ layout: default
   {% endfor %}
 </div>
 
-  <ul class="post-list">
-    {% for post in site.posts %}
-      <li>
-        <span class="post-meta">{{ post.date | date: "%b %-d, %Y" }}</span>
-
-        <h2>
-          <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-        </h2>
-      </li>
-    {% endfor %}
-  </ul>
-
+<!-- <p class="rss-subscribe">subscribe <a href="{{ "/feed.xml" | prepend: site.baseurl }}">via RSS</a></p> -->
