@@ -1,3 +1,13 @@
+---
+layout: post
+author: Pushpa Raj Badu
+title:  Vim snipmate plugin
+date:   2015-11-16 17:37:49
+categories: vim, snipmate, plugin
+description: Add sublime like snipmate autocomplete feature in vim editor. This tutorial will also helps you customize snipmate plugin as per your need...
+---
+
+
 If you are from Sublime Text 2/3 Or TextMate user, then you must be familier with their
 snipmate(or autocompletion) feature. For example, if you type html and then press ``Tab``
 key in Sublime Text it will automatically generate below html tags:
