@@ -11,11 +11,11 @@ description: Step by step guide to create and understand mountable rails engine 
 Rails-4 engine with rspec-rails, capybara and factory_girl_rails
 -----------------------------------------------------------------
 
-*. Create our engine with name `blorgh`
+> Create our engine with name `blorgh`
 
       $ rails plugin new blorgh --mountable -T --dummy-path=spec/dummy
 
-*. Next step is to add the `rspec-rails` gem to our `gemspec`
+> Next step is to add the `rspec-rails` gem to our `gemspec`
 
       # blorgh.gemspec
 
@@ -26,14 +26,14 @@ Rails-4 engine with rspec-rails, capybara and factory_girl_rails
       s.add_development_dependency "factory_girl_rails"
 
 
-*. Install and configure rspec-rails
+> Install and configure rspec-rails
 
 
       $ bundle install
       $ rails g rspec:install
 
 
-*. It will generate rspec configuration files for our engine. Make below changes in your ``spec/rails_helper.rb``
+> It will generate rspec configuration files for our engine. Make below changes in your ``spec/rails_helper.rb``
 
 
       # This file is copied to spec/ when you run 'rails generate rspec:install'
@@ -102,7 +102,7 @@ Rails-4 engine with rspec-rails, capybara and factory_girl_rails
       end
 
 
-*. Tell our engine to use rspec as a default test framework
+> Tell our engine to use rspec as a default test framework
 
       # lib/blorgh/engine.rb
 
@@ -121,7 +121,7 @@ Rails-4 engine with rspec-rails, capybara and factory_girl_rails
       end
 
 
-*. Now we are almost done with `rspec` and `factory_girl` configuration. So use rails ``scaffold`` generator to generate `article` resource like below:
+> Now we are almost done with `rspec` and `factory_girl` configuration. So use rails ``scaffold`` generator to generate `article` resource like below:
 
 
       $ rails g scaffold article title:string body:text
