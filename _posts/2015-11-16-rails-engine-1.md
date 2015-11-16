@@ -3,7 +3,7 @@ layout: post
 author: Pushpa Raj Badu
 title:  Rails Engine (first)
 date:   2015-11-16 17:37:49
-categories: rails, engine
+categories: rails engine
 description: Step by step guide to create and understand mountable rails engine and how to add rspec in it.
 ---
 

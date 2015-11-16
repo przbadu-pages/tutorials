@@ -3,7 +3,7 @@ layout: post
 author: Pushpa Raj Badu
 title:  Brew Postgresql common error
 date:   2015-11-16 17:37:49
-categories: brew, postgresql
+categories: brew postgresql
 description: Fix brew and postgresql error "Is the server running locally and accepting connections ...."
 ---
 
